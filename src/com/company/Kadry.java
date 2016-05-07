@@ -23,8 +23,8 @@ public class Kadry {
         if (zatrudnienie_ < 100) {
             pracownicy_[zatrudnienie_] = pracownik;
             zatrudnienie_++;
-        } else
-            System.out.println("Limit pracownikow has reached");
+        }
+        System.out.println("Limit pracownikow has reached");
     }
 
     private void dodajPracownikaInteraktywnie() {
@@ -55,11 +55,6 @@ public class Kadry {
             }
         }
         return wynik / ilosc;
-    }
-
-    protected int[] dajDzialy() {
-        //kod
-        return new int[0];
     }
 
     public void zapiszDoPliku() {
