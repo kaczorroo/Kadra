@@ -46,8 +46,15 @@ public class Kadry {
     }
 
     protected double sredniZarobek(int dzial) {
-        // kod
-        return 0;
+        double wynik = 0;
+        int ilosc = 0;
+        for (int i = 0; i < zatrudnienie_; i++) {
+            if (pracownicy_[i].getDzial() == dzial) {
+                wynik = wynik + pracownicy_[i].getPlaca();
+                ilosc++;
+            }
+        }
+        return wynik / ilosc;
     }
 
     protected int[] dajDzialy() {
